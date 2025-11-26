@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PRYZ2BGLCL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PRYZ2BGLCL");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+     GuestHeard | Anderson Marques | Product Designer / UX Designer
+    </title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/animations.css" />
+    <script src="/js/scroll-animations.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Password overlay -->
+   <div
+      id="password-overlay"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(242, 242, 242);
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div
+        style="
+          text-align: center;
+          padding: 40px;
+          border-radius: 16px;
+          background: white;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+        "
+      >
+        <h2
+          style="
+            margin-bottom: 20px;
+            color: #111111;
+            font-family: Instrument serif;
+            font-size: 40px;
+          "
+        >
+          Content is Protected
+        </h2>
+        <p style="margin-bottom: 30px; color: #666">
+          To view this case study, please enter the password.
+        </p>
+        <form id="loginForm">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+            style="
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ddd;
+              border-radius: 100px;
+              margin-bottom: 20px;
+              font-size: 16px;
+              box-sizing: border-box;
+            "
+          />
+          <button
+            type="submit"
+            style="
+              width: 100%;
+              padding: 12px;
+              background: #111111;
+              color: white;
+              border: none;
+              border-radius: 100px;
+              font-size: 16px;
+              cursor: pointer;
+            "
+          >
+            Access Project
+          </button>
+        </form>
+        <p
+          id="error-message"
+          style="color: #ff4444; margin-top: 15px; display: none"
+        >
+          Incorrect password. Please try again.
+        </p>
+        <a
+          href="/index.html"
+          style="
+            display: inline-block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: underline;
+          "
+          >← Back to Homepage</a
+        >
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+      <!-- HEADER -->
+
+      <header>
+        <a href="/index.html">
+          <div class="logo">
+            <div class="logo-circle"></div>
+            <!-- <span class="logo-text">AM</span> -->
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li class="selected-page"><a href="/index.html">Work</a></li>
+            <li><a href="/about.html">About</a></li>
+           
+          </ul>
+        </nav>
+        <a href="mailto:andersonmarquesolive@gmail.com" class="contact-button"
+          >Contact me</a
+        >
+      </header>
+
+      <main class="project-page">
+        <section class="project-header scroll-reveal">
+          <a href="/index.html" class="back-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-left"
+            >
+              <path d="m12 19-7-7 7-7" />
+              <path d="M19 12H5" />
+            </svg>
+          </a>
+
+          <div class="project-title-container">
+            <h2 class="project-name">Flair Airlines</h2>
+            <p class="project-headline">
+              Optimizing Conversion Through User-Centric Design
+            </p>
+          </div>
+
+          <div class="project-meta">
+            <div class="meta-item">
+              <h3 class="meta-title">TIMELINE</h3>
+              <p class="meta-value">4 days (design challenge)</p>
+            </div>
+            <div class="meta-item">
+              <h3 class="meta-title">ROLE</h3>
+              <p class="meta-value">UX Designer</p>
+            </div>
+            <div class="meta-item">
+              <h3 class="meta-title">INDUSTRY</h3>
+              <p class="meta-value">Transportation</p>
+            </div>
+            <div class="meta-item">
+              <h3 class="meta-title">TEAM</h3>
+              <p class="meta-value">Solo Designer</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="img-container">
+         
+
+          <section class="project-showcase scroll-reveal delay-100">
+                <div class="project-image-full">
+                    <lottie-player 
+                        src="/img/flair/flair_reel.json" 
+                        background="transparent" 
+                        speed="1" 
+                        style="width: 100%; height: auto;" 
+                        loop 
+                        autoplay>
+                    </lottie-player>
+                </div>
+            </section>
+        </div>
+
+        <section class="project-introduction scroll-reveal delay-100">
+          <h2>HIGHLIGHT</h2>
+          <div class="introduction-content">
+            <h5>
+              Redesign Flair Airlines' mobile booking experience to increase
+              conversion rates and create a more intuitive, seamless user
+              journey that aligns with the brand's strategy for growth. This was
+              presented as a comprehensive design challenge to demonstrate
+              research methodology, design thinking, and strategic
+              problem-solving skills during the hiring process.
+            </h5>
+          </div>
+        </section>
+    
+
+
+             <section class="project-showcase scroll-reveal delay-100">
+            <div class="project-image-full">
+              <img src="/img/flair/flair.png" alt="Flair Airlines" />
+            </div>
+          </section>
+
+      
+
+        <section class="project-introduction scroll-reveal delay-100">
+          <h2>ABOUT PROJECT</h2>
+          <div class="introduction-content">
+            <h5>
+              Flair Airlines, as a low-cost carrier, needed to maximize digital
+              conversion while maintaining operational efficiency. The existing
+              mobile experience was creating friction in the booking funnel,
+              directly impacting revenue and user satisfaction. I redesigned
+              Flair Airlines' mobile booking experience as a 4-day design
+              challenge during a UX/UI designer interview process. The
+              project required demonstrating end-to-end design thinking from
+              research to implementation strategy.
+            </h5>
+          </div>
+        </section>
+
+        <section class="project-introduction scroll-reveal delay-100">
+          <h2>MY ROLE</h2>
+          <div class="introduction-content">
+            <h3></h3>
+            <ul class="findings-list">
+              <li>
+                Conducted competitive analysis and heuristic evaluation of
+                existing mobile experience
+              </li>
+              <li>
+                Synthesized research insights into actionable design
+                opportunities
+              </li>
+              <li>Developed user journey maps and information architecture</li>
+              <li>
+                Created wireframes and high-fidelity prototypes for core booking
+                flows
+              </li>
+              <li>
+                Presented strategic recommendations with projected business
+                impact
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <div class="gray-box">
+            <h2>CHALLENGE</h2>
+            <div class="process-content">
+              <!-- <h3>Challenge</h3> -->
+              <h5>
+                How might we redesign Flair Airlines' mobile booking experience
+                to reduce conversion friction while maintaining brand
+                consistency and building user trust in a competitive low-cost
+                carrier market?
+              </h5>
+
+              <p>
+                With mobile traffic accounting for 60%+ of airline bookings,
+                poor mobile experiences directly impact revenue. Users expect
+                seamless, fast booking flows that work flawlessly on mobile
+                devices, especially for price-conscious travelers comparing
+                multiple airlines.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <h2>DEFINING PROBLEM</h2>
+          <div class="process-content">
+            <h5>
+              Framing the right question: Understanding what prevents users from
+              completing mobile bookings successfully.
+            </h5>
+
+            <p>
+              The challenge focused specifically on mobile conversion
+              optimization, but required understanding the broader context of
+              low-cost carrier positioning, user expectations, and technical
+              constraints within a 4-day timeline.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <h2>CONTEXT</h2>
+          <div class="process-content">
+            <h5>
+              I focused on travelers booking domestic Canadian flights through
+              mobile devices. These users are typically price-sensitive,
+              comparison shopping across multiple airlines, and expecting quick,
+              transparent booking processes.
+            </h5>
+
+            <!-- <ul class="findings-list">
+              <li>
+                67% of mobile users abandon airline booking flows before completion
+
+              </li>
+              <li>Forced registration causes 34% drop-off rate across travel industry
+
+</li>
+              <li>
+                Mobile-first users complete bookings 23% faster than desktop-adapted experiences
+
+
+
+              </li>
+              
+            </ul> -->
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair_context.png" alt="Context" />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <h2>DISCOVER - COMPETITIVE ANALYSIS</h2>
+          <div class="process-content">
+            <h5>
+              After establishing the project scope, I conducted systematic
+              analysis of competitor mobile experiences to understand industry
+              standards and identify differentiation opportunities.
+            </h5>
+
+            <p>
+              I analyzed 4 major airline mobile websites (WestJet, Air Canada,
+              Ryanair, Porter) focusing on booking flow efficiency,
+              authentication patterns, information hierarchy, and
+              mobile-specific interaction design.
+            </p>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/weaup/weaup_interview.png" alt="Context" />
+              </div>
+            </section>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img
+                  src="/img/flair/flair_competitivefindings.png"
+                  alt="Context"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <h2>USER INSIGHTS</h2>
+          <div class="process-content">
+            <h5>
+              Based on app store reviews, industry research, and heuristic
+              evaluation, I identified three primary user types:
+            </h5>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair_users.png" alt="Users Profiles" />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <h2>DESIGN STRATEGY</h2>
+          <div class="process-content">
+            <h5>
+              Increase conversion through friction reduction and trust building.
+            </h5>
+
+            <p>
+              Users abandon mobile booking flows due to authentication barriers,
+              information overload, and lack of confidence in the process. My
+              strategy focused on creating a streamlined, transparent experience
+              that builds trust while reducing cognitive load.
+            </p>
+
+            <ul class="findings-list">
+              <li>
+                Mobile-first interactions - Design for thumb navigation and
+                one-handed use
+              </li>
+              <li>
+                Progressive disclosure - Reveal complexity only when needed
+              </li>
+              <li>
+                Trust through transparency - Clear pricing, progress, and
+                policies
+              </li>
+
+              <li>
+                Seamless guest flow - Enable booking without forced registration
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <div class="gray-box">
+            <h2>DESIGN - INFORMATION ARCHITECTURE & USER FLOWS</h2>
+            <div class="process-content">
+              <h5>
+                I mapped the current booking flow and redesigned it to eliminate
+                unnecessary steps and decision points. The new architecture
+                reduced the booking process from 11 to 9 core steps, also reducing the amount of decision points by 32%.
+              </h5>
+
+              <p>
+                Additionally, we explored and refined our app essential
+                features, through initial sketches and brainstorming,
+                incorporating insights from user interviews and competitor
+                analysis. These steps helped us create a user-centered design
+                that set the stage for effective wireframing and prototyping.
+              </p>
+
+              <section class="project-showcase">
+                <div class="project-image-full">
+                  <img src="/img/weaup/weaup_flows.png" alt="IA" />
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-process scroll-reveal delay-100">
+          <h2>DESIGN - WIREFRAMING AND TESTING</h2>
+          <div class="process-content">
+            <h5>
+              Created low-fidelity wireframes focusing on information hierarchy
+              and interaction patterns. Tested core user flows through scenario
+              walkthroughs to identify potential usability issues before
+              high-fidelity design.
+            </h5>
+
+            <p>
+              Through these sessions, we observed how users interacted with the
+              proposed features, identifying pain points and areas for
+              improvement. By prioritizing user needs, we developed a seamless
+              and intuitive experience for WeaUp, laying a strong foundation for
+              the app.
+            </p>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/weaup/weaup_wireframes.png" alt="Wireframes" />
+              </div>
+            </section>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair_uikit.png" alt="UI Kit" />
+              </div>
+            </section>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img
+                  src="/img/flair/flair_componentlibrary.png"
+                  alt="Component Library"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- <section class="project-results">
+            <h2>SUCCESS CRITERIA</h2>
+            <div class="results-content">
+                <h5>The success of our product will be measured by its ability to simplify clinic workflows, enhance patient care quality, and drive time savings for healthcare professionals.
+                </H5>
+                <ul class="results-list">
+                    <li>Increased clarity in pricing presentation</li>
+                    <li>Improved user confidence in the booking process</li>
+                    <li>Streamlined decision-making for fare selection</li>
+                    <li>Better visibility of important flight details</li>
+                </ul>
+                
+                <p>While the project was completed as a design challenge, the solutions provided a strong foundation for potential implementation in Clinside Airlines' actual booking platform.</p>
+            </div>
+        </section> -->
+
+        <section class="project-process scroll-reveal delay-100">
+          <div class="gray-box">
+            <h2>SOLUTION</h2>
+            <div class="process-content">
+              <h5>
+                A mobile-first booking experience that prioritizes speed,
+                clarity, and user confidence.
+              </h5>
+
+              <p>
+                The redesigned experience uses progressive disclosure,
+                streamlined authentication, and mobile-optimized interactions to
+                create a booking flow that feels native to mobile devices while
+                building trust in the Flair Airlines brand.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-results scroll-reveal delay-100">
+          <h2>MAIN FEATURES</h2>
+          <div class="results-content">
+            <h5>Clinside revolutionizes clinic management by streamlining appointment scheduling, organizing
+                        medical data, and maintaining detailed consultation histories.
+                    </H5>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img src="/img/flair/flair.png" alt="Flair Airlines" />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="project-results scroll-reveal delay-100">
+          <h2>SUCCESS CRITERIA</h2>
+          <div class="results-content">
+            <!-- <h5>The success of our product will be measured by its ability to simplify clinic workflows, enhance
+                        patient care quality, and drive time savings for healthcare professionals.
+                    </H5> -->
+
+            <section class="project-showcase">
+              <div class="project-image-full">
+                <img
+                  src="/img/flair/Flair_SuccessCriteria.png"
+                  alt="Sucess Criteria"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="project-reflection scroll-reveal delay-100">
+          <h2>MY TAKEAWAYS</h2>
+          <div class="reflection-content">
+            <h5>
+              User research validation was crucial even within tight timeline
+              constraints.
+            </h5>
+            <p>
+              Initially, I focused heavily on competitive analysis and industry
+              best practices. However, validating assumptions through app store
+              review analysis and user scenario testing revealed specific pain
+              points unique to low-cost carrier mobile experiences, particularly
+              around trust building and pricing transparency.
+            </p>
+            <br />
+            <h5>
+              Mobile-first design requires different thinking than responsive
+              design.
+            </h5>
+            <p>
+              This project reinforced that truly mobile-optimized experiences
+              aren't just about making things fit smaller screens – they require
+              rethinking interaction patterns, information hierarchy, and user
+              mental models for mobile contexts.
+            </p>
+            <br />
+
+            <h5>
+              Design challenges benefit from strategic constraint
+              acknowledgment.
+            </h5>
+            <p>
+              Working within a 4-day timeline taught me to balance thoroughness
+              with efficiency, focusing research efforts on highest-impact
+              insights while still demonstrating comprehensive design thinking.
+            </p>
+          </div>
+        </section>
+
+        <!-- MORE CASES -->
+        <section class="more-case-studies scroll-reveal delay-200">
+          <h1 class="next-case">Next case studies</h1>
+
+          <div class="case-studies-grid">
+            <a href="/clinside.html" class="case-study-card blue-bg">
+              <div class="case-study-image">
+                <img src="/img/home/clinside.png" alt="Clinside" />
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">Clinside</h3>
+                <p class="case-study-description">
+                  Streamlining Clinic Management for Brazil's Underserved
+                  Regions
+                </p>
+              </div>
+            </a>
+
+            <a href="/weaup.html" class="case-study-card green-bg">
+              <div class="case-study-image">
+                <img src="/img/home/weaup.png" alt="WeaUp" />
+              </div>
+              <div class="case-study-content">
+                <h3 class="case-study-title">WeaUp</h3>
+                <p class="case-study-description">
+                  Helping users improve posture habits through supportive
+                  accountability from friends
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-main">
+          <div class="footer-cta">
+            Reach out for collaborations or just a friendly hello →
+          </div>
+          <div class="footer-contact">
+            <a href="mailto:andersonmarquesolive@gmail.com" class="footer-email"
+              >andersonmarquesolive@gmail.com</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1_TKsvHgMHta_ZemfaEgg6dTFBrQ5a_rw/view"
+              target="_blank"
+              class="footer-resume"
+              >View Resume</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">© Anderson Marques 2025</div>
+          <div class="footer-social">
+            <a href="https://linkedin.com/in/andersonmarquesoli" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+ <script>
+        const PASSWORD_HASH = "54cd57796dc761d5a130286b062cc7fc88a36e90743496ef3ee9009099a4d08a";
+        
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+        }
+        
+        document.getElementById("loginForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const input = document.getElementById("password").value;
+            const hash = await sha256(input);
+            
+            if (hash === PASSWORD_HASH) {
+                document.getElementById("password-overlay").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                document.getElementById("error-message").style.display = "block";
+                document.getElementById("password").value = "";
+                setTimeout(() => {
+                    document.getElementById("error-message").style.display = "none";
+                }, 3000);
+            }
+        });
+    </script>
+
+
+  </body>
+</html>

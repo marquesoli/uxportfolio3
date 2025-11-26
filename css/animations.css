@@ -1,0 +1,55 @@
+/* Base styles for elements before they're revealed */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Styles applied when elements are revealed */
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Different delay times for staggered animations */
+.delay-100 {
+  transition-delay: 0.1s;
+}
+.delay-200 {
+  transition-delay: 0.2s;
+}
+.delay-300 {
+  transition-delay: 0.3s;
+}
+.delay-400 {
+  transition-delay: 0.4s;
+}
+.delay-500 {
+  transition-delay: 0.5s;
+}
+
+@media (max-width: 480px) {
+  #selected-work {
+    visibility: hidden;
+    display: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .delay-100,
+  .delay-200,
+  .delay-300,
+  .delay-400,
+  .delay-500 {
+    transition-delay: 0s !important;
+  }
+}
